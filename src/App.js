@@ -14,7 +14,15 @@ state = {
 
 switchNameHandler = () =>{
   //console.log('Was clicked');
-  this.state.persons[0].name = Maximillia
+  this.setState(
+    {
+      persons: [
+        {name: 'Mungolo', age: '25'},
+        {name: 'Bumbolo', age: '17'},
+        {name: 'Sompolo', age: '20'}
+      ]
+    }
+  )
 }
 
 render() {
