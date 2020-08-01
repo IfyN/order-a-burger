@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Person from './Person/Person';
 import './App.css';
+import { render } from '@testing-library/react';
 
-function App() {
-  return (
+class App extends Component {
+state = {
+  persons: [
+    {name: 'Ifeoma', age: '25'},
+    {name: 'Chichi', age: '17'},
+    {name: 'Somto', age: '20'},
+  ]
+}
+}
+
+render(){
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React App Test</h1>
+      <h1> Its working!</h1>
+      <Person name = {this.state.persons[0].name} age = {this.state.persons[0].age}> Habelo
+      </Person>
+      <Person name = {this.state.persons[1].name} age = {this.state.persons[1].age}> Habelo
+      </Person>
+      <Person name = {this.state.persons[2].name} age = {this.state.persons[2].age}> Habelo
+      </Person>
+
+
+
+    
     </div>
-  );
+  )
 }
 
 export default App;
