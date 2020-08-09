@@ -12,6 +12,8 @@ const App = props => {
   otherState: 'some value'
  });
 
+ console.log(personsState);
+
  const switchNameHandler = () => {
   //console.log('Was clicked');
   setPersonsState({
@@ -24,7 +26,7 @@ const App = props => {
 }
   return (
     <div className="App">
-      <h1>React App Test</h1>
+      <h1>This is a react App</h1>
       <h1> Its working!</h1>
       <button onClick={switchNameHandler}> Switch name</button>
       <Person name = {personsState.persons[0].name} age = {personsState.persons[0].age}/>
