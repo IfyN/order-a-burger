@@ -9,8 +9,7 @@ const App = props => {
     {name: 'Chichi', age: '17'},
     {name: 'Somto', age: '20'}
   ],
-  otherState: 'some value'
- });
+  
 
  console.log(personsState);
 
