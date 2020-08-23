@@ -28,6 +28,7 @@ const App = props => {
     <div className="App">
       <h1>This is a react App</h1>
       <h1> Its working!</h1>
+      
       <button onClick={switchNameHandler}> Switch name</button>
       <Person name = {personsState.persons[0].name} 
       age = {personsState.persons[0].age} />
